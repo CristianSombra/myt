@@ -1,0 +1,9 @@
+.home-container h1 {
+    font-size: 68px;
+}
+
+@media (max-width: 767px) {
+    .home-container h1 {
+        font-size: 48px;
+    }
+}

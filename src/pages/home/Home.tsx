@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import type {AnimateProps} from "../../components";
-import { teamWork } from "../../assets/images/Images";
+import { imageHome } from "../../assets/images/Images";
+import '../../styles';
+
 
 const Home: React.FC<AnimateProps> = ({animate}) => {
     return(
@@ -9,19 +11,27 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
         initial={{ opacity: 0}}
         animate= { animate ? { opacity: 1 } : { opacity: 0}}
         id="home"
+        className="home-container"
         >
-            <div className="row my-5">
-                <div className="col-12 text-center">
-                    <h1>Home</h1>
+            <div className="row justify-content-center text-center text-md-start my-md-5">
+                <div className="col-12 col-md-5">
+                    <div className="row">
+                        <div className="col-12">
+                            <h1>Moda para</h1>
+                            <h1>Adolescentes</h1>
+                        </div>
+                        <div className="col-12 col-md-11 col-lg-9 my-3">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repellendus eveniet, quam laudantium amet molestiae possimus minus. Magnam, tempora dolore!</p>
+                        </div>
+                        <div className="col-12 d-flex justify-content-center justify-content-md-start">
+                            <button className="btn btn-dark my-3">
+                                Ver Productos
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="row d-flex justify-content-center">
-                <div className="col-10 col-md-4 ">
-                    <img src={teamWork} className="img-fluid" alt="..."></img>
-                </div>
-                <div className="col-10 col-md-4 text-center">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repellendus eveniet, quam laudantium amet molestiae possimus minus. Magnam, tempora dolore!
-                    </p>
+                <div className="col-10 col-md-4 col-lg-3">
+                    <img src={imageHome} className="img-fluid rounded-4 shadow" alt="..."></img>
                 </div>
             </div>
         </motion.section>

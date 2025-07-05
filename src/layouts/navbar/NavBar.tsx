@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
-      <div className="container-fluid">
+      <div className="container-fluid px-lg-5">
         <a className="navbar-brand" href="#home" onClick={closeNavbar}>
           <img src={logoNav} width={100} alt="M&T Tienda de ropa" />
         </a>
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
             href="https://wa.me/123456789"
             target="_blank"
             rel="noopener noreferrer"
-            className="social-link text-success d-md-block d-none"
+            className="social-link text-success d-lg-block d-none"
           >
             <FaWhatsapp size={50} />
           </a>

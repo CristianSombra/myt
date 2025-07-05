@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import type {AnimateProps} from "../../components";
-import { teamWork } from "../../assets/images/Images";
 
 const Services: React.FC<AnimateProps> = ({animate}) => {
     return(
@@ -16,9 +15,9 @@ const Services: React.FC<AnimateProps> = ({animate}) => {
                 </div>
             </div>
             <div className="row d-flex justify-content-center">
-                <div className="col-4">
-                    <img src={teamWork} className="img-fluid" alt="..."></img>
-                </div>
+                {/* <div className="col-4">
+                    <img src={} className="img-fluid" alt="..."></img>
+                </div> */}
                 <div className="col-4">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repellendus eveniet, quam laudantium amet molestiae possimus minus. Magnam, tempora dolore!
                     </p>
