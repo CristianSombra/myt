@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           className={`collapse navbar-collapse${expanded ? ' show' : ''}`}
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-5 text-center">
             <li className="nav-item">
               <a className="nav-link fs-3" href="#home" onClick={closeNavbar}>
                 Inicio
