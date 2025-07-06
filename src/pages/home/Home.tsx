@@ -13,9 +13,9 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
         id="home"
         className="home-container"
         >
-            <div className="row d-flex justify-content-center text-center text-md-start mt-2 my-md-5">
+            <div className="row d-flex justify-content-center mt-2 my-md-5">
                 <div className="col-12 col-md-5">
-                    <div className="row">
+                    <div className="row text-center text-md-start">
                         <div className="col-12">
                             <h1 className="mb-0">Moda para</h1>
                             <h1>Adolescentes</h1>

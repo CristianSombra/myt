@@ -13,4 +13,4 @@ export const imageProducts3 = "https://res.cloudinary.com/dk7b7yi87/image/upload
 export const imageAbout1 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1751830338/about1_njcqj0.png";
 
 //Contact
-export const imageContact1 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1751834503/Contact_drm2bt.png";
+export const imageContact1 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1751836620/contact_a3nci3.png";
