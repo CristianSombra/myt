@@ -1,9 +1,4 @@
 .home-container h1 {
-    font-size: 68px;
+  font-size: clamp(40px, 5vw, 60px);
 }
 
-@media (max-width: 767px) {
-    .home-container h1 {
-        font-size: 48px;
-    }
-}

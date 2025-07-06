@@ -8,6 +8,7 @@ const About: React.FC<AnimateProps> = ({animate}) => {
         initial={{ opacity: 0}}
         animate= { animate ? { opacity: 1 } : { opacity: 0}}
         id="about"
+        className="about-container my-5"
         >
             <div className="row text-center">
                 <div className="col">
