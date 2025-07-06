@@ -1,0 +1,4 @@
+.products-container h1 {
+  font-size: clamp(40px, 5vw, 60px);
+}
+

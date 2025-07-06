@@ -13,7 +13,7 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
         id="home"
         className="home-container"
         >
-            <div className="row justify-content-center text-center text-md-start my-md-5">
+            <div className="row justify-content-center text-center text-md-start mt-2 my-md-5">
                 <div className="col-12 col-md-5">
                     <div className="row">
                         <div className="col-12">
@@ -21,18 +21,20 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
                             <h1>Adolescentes</h1>
                         </div>
                         <div className="col-12 col-md-11 col-lg-9 my-3">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repellendus eveniet, quam laudantium amet molestiae possimus minus. Magnam, tempora dolore!</p>
+                            <p>En M&T te ofrecemos las últimas tendencias en ropa para adolescentes. Estilo, comodidad y personalidad en cada prenda. Descubrí nuestra colección y encontrá el outfit que mejor te representa.</p>
                         </div>
-                        <div className="col-12 d-flex justify-content-center justify-content-md-start d-md-block d-none">
+                        <div className="col-12 d-flex justify-content-md-start d-md-block d-none">
                             <button className="btn btn-dark my-3">
                                 Ver Productos
                             </button>
                         </div>
                     </div>
                 </div>
-                <div className="col-10 col-md-4 col-lg-3">
+                <div className="col-10 col-md-4 col-lg-3 mb-1">
                     <img src={imageHome} className="img-fluid rounded-4 shadow" alt="..."></img>
-                    <button className="btn btn-dark my-5 d-block d-md-none">
+                </div>
+                <div className="d-flex justify-content-center my-4 d-block d-md-none">
+                    <button className="btn btn-dark">
                         Ver Productos
                     </button>
                 </div>

@@ -6,16 +6,16 @@ import { SpinnerLoader } from '../components';
 import { ScrollToTop } from "../utils/scrollToTop/ScrollToTop";
 import {
     Home,
-    About,
     Products,
+    About,
     Contact
 } from "../pages";
 
 
 const AppRouter: React.FC = () => {
     const [homeRef, homeInView] = useInView({ threshold: 0.40 });
-    const [aboutRef, aboutInView] = useInView({ threshold: 0.20 });
     const [productsRef, productsInView] = useInView({ threshold: 0.20 });
+    const [aboutRef, aboutInView] = useInView({ threshold: 0.20 });
     const [contactRef, contactInView] = useInView({ threshold: 0.20 });
 
 
@@ -27,14 +27,14 @@ const AppRouter: React.FC = () => {
                     <Home animate={homeInView} />
                 </Suspense>
             </div>
+             <div ref={productsRef}>
+                <Suspense fallback={<SpinnerLoader />}>
+                    <Products animate={productsInView} />
+                </Suspense>
+            </div>
             <div ref={aboutRef}>
                 <Suspense fallback={<SpinnerLoader />}>
                     <About animate={aboutInView} />
-                </Suspense>
-            </div>
-            <div ref={productsRef}>
-                <Suspense fallback={<SpinnerLoader />}>
-                    <Products animate={productsInView} />
                 </Suspense>
             </div>
             <div ref={contactRef}>

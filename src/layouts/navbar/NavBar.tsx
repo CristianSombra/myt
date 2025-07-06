@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
            <a
-            href="https://wa.me/123456789"
+            href="https://wa.me/5492964694981"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link text-success d-lg-block d-none"
