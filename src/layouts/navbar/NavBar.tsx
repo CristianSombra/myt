@@ -31,11 +31,6 @@ const Navbar: React.FC = () => {
         >
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-5 text-center">
             <li className="nav-item">
-              <a className="nav-link fs-3" href="#home" onClick={closeNavbar}>
-                Inicio
-              </a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link fs-3" href="#products" onClick={closeNavbar}>
                 Productos
               </a>

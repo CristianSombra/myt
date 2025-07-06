@@ -13,7 +13,7 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
         id="home"
         className="home-container"
         >
-            <div className="row justify-content-center text-center text-md-start mt-2 my-md-5">
+            <div className="row d-flex justify-content-center text-center text-md-start mt-2 my-md-5">
                 <div className="col-12 col-md-5">
                     <div className="row">
                         <div className="col-12">
