@@ -12,7 +12,7 @@ const Services: React.FC<AnimateProps> = ({animate}) => {
         className="products-container my-5"
         >
             <div className="row d-flex justify-content-center">
-                <div className="col-12 text-center">
+                <div className="col-12 text-center mt-5">
                     <h1>Nuestros Productos</h1>
                 </div>
                  <div className="col-11 col-md-6 text-center my-4">
@@ -20,17 +20,17 @@ const Services: React.FC<AnimateProps> = ({animate}) => {
                 </div>
             </div>
             <div className="row d-flex justify-content-center align-items-center">
-                <div className="col-10 col-md-2 text-center">
+                <div className="col-10 col-md-3 col-lg-2 text-center">
                     <img src={imageProducts1} className="img-fluid rounded-4" alt="..."></img>
                     <h3 className="my-3">Suéteres</h3>
                     <p>Comodidad y estilo para cualquier ocasión.</p>
                 </div>
-                <div className="col-10 col-md-2 mx-lg-5 my-5 text-center">
+                <div className="col-10 col-md-3 col-lg-2 mx-md-4 mx-lg-5 my-5 text-center">
                     <img src={imageProducts2} className="img-fluid rounded-4" alt="..."></img>
                     <h3 className="my-3">Camisetas</h3>
                     <p>Diseños versátiles para tu día a día.</p>
                 </div>
-                <div className="col-10 col-md-2 text-center">
+                <div className="col-10 col-md-3 col-lg-2 text-center">
                     <img src={imageProducts3} className="img-fluid rounded-4" alt="..."></img>
                     <h3 className="my-3">Chaquetas</h3>
                     <p>Protección y tendencia en cada detalle.</p>

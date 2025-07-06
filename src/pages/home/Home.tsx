@@ -24,7 +24,7 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
                             <p>En M&T te ofrecemos las últimas tendencias en ropa para adolescentes. Estilo, comodidad y personalidad en cada prenda. Descubrí nuestra colección y encontrá el outfit que mejor te representa.</p>
                         </div>
                         <div className="col-12 d-flex justify-content-md-start d-md-block d-none">
-                            <button className="btn btn-dark my-3">
+                            <button className="btn btn-dark my-2">
                                 Ver Productos
                             </button>
                         </div>
