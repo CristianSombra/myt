@@ -12,7 +12,7 @@ const Services: React.FC<AnimateProps> = ({animate}) => {
         className="products-container my-5"
         >
             <div className="row d-flex justify-content-center">
-                <div className="col-12 text-center mt-5">
+                <div className="col-12 text-center mt-4">
                     <h1>Nuestros Productos</h1>
                 </div>
                  <div className="col-11 col-md-6 text-center my-4">

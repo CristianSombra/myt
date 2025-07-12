@@ -34,7 +34,7 @@ const About: React.FC<AnimateProps> = ({animate}) => {
         className="about-container my-5"
         >
            <div className="row d-flex justify-content-center">
-                <div className="col-12 text-center mt-5">
+                <div className="col-12 text-center mt-4">
                     <h1>Sobre Nosotros</h1>
                 </div>
                  <div className="col-11 col-md-8 col-lg-7 text-center my-4">
@@ -48,10 +48,10 @@ const About: React.FC<AnimateProps> = ({animate}) => {
             </div>
 
 
-          <div className="container py-5">
+          <div className="container py-4">
               <div className="row d-flex justify-content-center">
                 {features.map((feature, index) => (
-                  <div key={index} className="col-8 col-md-4 col-lg-3 mx-lg-5 mb-4">
+                  <div key={index} className="col-8 col-md-4 col-lg-3 mx-lg-4 mb-4">
                     <div className="card h-100 border-0 shadow-sm text-center">
                       <div className="card-body">
                         <i
