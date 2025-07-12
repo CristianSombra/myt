@@ -37,7 +37,7 @@ const About: React.FC<AnimateProps> = ({animate}) => {
                 <div className="col-12 text-center mt-4">
                     <h1>Sobre Nosotros</h1>
                 </div>
-                 <div className="col-11 col-md-8 col-lg-7 text-center my-4">
+                 <div className="col-11 col-md-9 col-lg-7 text-center my-4">
                     <p>En M&T te ofrecemos las últimas tendencias en ropa para adolescentes. Estilo, comodidad y personalidad en cada prenda. Descubrí nuestra colección y encontrá el outfit que mejor te representa.</p>
                 </div>
             </div>
