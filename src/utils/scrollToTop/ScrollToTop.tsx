@@ -28,7 +28,7 @@ export const ScrollToTop: React.FC = () => {
       {visible && (
         <motion.button
           id="scroll-to-top"
-          className="btn"
+          className="btn d-block d-md-none"
           onClick={scrollToTop}
           initial={{ opacity: 0, y: 30 }}
           animate={{

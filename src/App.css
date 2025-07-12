@@ -1,3 +1,39 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media (min-width: 768px) {
+  section {
+    scroll-margin-top: 70px; /* Ajusta según la altura de tu navbar */
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;800&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+p, a, li, button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #444;
+}
+
+button {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

@@ -42,7 +42,7 @@ const About: React.FC<AnimateProps> = ({animate}) => {
                 </div>
             </div>
             <div className="row d-flex justify-content-center">
-                <div className="col-11 col-md-8 col-lg-5 text-center my-5">
+                <div className="col-11 col-md-8 col-lg-6 text-center my-3">
                     <img src={imageAbout1} className="img-fluid rounded-4 shadow" alt="..."></img>
                 </div>           
             </div>

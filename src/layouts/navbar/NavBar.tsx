@@ -9,9 +9,9 @@ const Navbar: React.FC = () => {
   const closeNavbar = () => setExpanded(false)
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-white">
+    <nav className="navbar navbar-expand-md navbar-light bg-white sticky-md-top">
       <div className="container-fluid px-lg-5">
-        <a className="navbar-brand" href="#home" onClick={closeNavbar}>
+        <a className="navbar-brand">
           <img src={logoNav} width={90} alt="M&T Tienda de ropa" />
         </a>
         <button
@@ -30,6 +30,11 @@ const Navbar: React.FC = () => {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-md-4 gap-lg-5 text-center">
+            <li className="nav-item">
+              <a className="nav-link fs-4 d-md-block d-none" href="#home" onClick={closeNavbar}>
+                Inicio
+              </a>
+            </li>
             <li className="nav-item">
               <a className="nav-link fs-4" href="#products" onClick={closeNavbar}>
                 Productos
@@ -52,7 +57,7 @@ const Navbar: React.FC = () => {
             rel="noopener noreferrer"
             className="social-link text-success d-md-block d-none ms-4"
           >
-            <FaWhatsapp size={40} />
+            <FaWhatsapp size={45} />
           </a>
         </div>
       </div>

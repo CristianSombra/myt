@@ -2,14 +2,14 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #00415D;
-    border: 1px solid #002f40;
+    color: #000000;
+    border: 1px solid #000000;
     width: 56px;
     height: 56px;
     z-index: 1000;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #scroll-to-top:hover {
-    border: 2px solid #002f40;
+    border: 2px solid #000000;
 }

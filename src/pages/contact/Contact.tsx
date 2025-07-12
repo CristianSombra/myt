@@ -9,18 +9,18 @@ const Contact: React.FC<AnimateProps> = ({animate}) => {
         initial={{ opacity: 0}}
         animate= { animate ? { opacity: 1 } : { opacity: 0}}
         id="contact"
-        className="container py-4 py-lg-5"
+        className="container py-4 py-lg-3"
         >
             <div className="mb-5">
                 <div className="row d-flex justify-content-center">
-                    <div className="col-12 col-lg-8 text-center">
+                    <div className="col-12 col-lg-9 text-center">
                         <h1>Contáctanos</h1>
                         <div className="my-4">
                             <p>Estamos aquí para escucharte. Completa el formulario o escríbenos directamente y nos pondremos en contacto contigo lo antes posible.</p>
                         </div>
                     </div>
                 </div>
-                <div className="row d-flex justify-content-around my-4">
+                <div className="row d-flex justify-content-around my-3">
                     <div className="col-12 col-md-6 col-lg-5 order-2 order-md-1 text-center">                    
                         <form>
                           <div className="mb-3">
@@ -83,7 +83,7 @@ const Contact: React.FC<AnimateProps> = ({animate}) => {
                     </div>
                     
                      <div className="col-10 col-md-5 col-lg-4 order-1 order-md-2 mb-5 mb-md-0">
-                        <img src={imageContact1} className="img-fluid rounded-5 shadow" alt="..."></img>
+                        <img src={imageContact1} className="img-fluid rounded-5 shadow col-md-12 col-lg-11" alt="..."></img>
                     </div>
                 </div>
             </div>
