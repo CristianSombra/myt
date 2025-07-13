@@ -15,12 +15,10 @@ import {
 
 
 const MainPage: React.FC = () => {
-    const [homeRef, homeInView] = useInView({ threshold: 0.40 });
+    const [homeRef, homeInView] = useInView({ threshold: 0.20 });
     const [productsRef, productsInView] = useInView({ threshold: 0.20 });
-    const [aboutRef, aboutInView] = useInView({ threshold: 0.20 });
-    const [contactRef, contactInView] = useInView({ threshold: 0.20 });
-
-
+    const [aboutRef, aboutInView] = useInView({ threshold: 0.10 });
+    const [contactRef, contactInView] = useInView({ threshold: 0.10 });
 
     return (
         <>
@@ -52,7 +50,7 @@ const MainPage: React.FC = () => {
               aria-labelledby="productsModalLabel"
               aria-hidden="true"
             >
-              <div className="modal-dialog modal-lg modal-dialog-centered">
+            <div className="modal-dialog modal-lg modal-dialog-centered">
                 <div className="modal-content">
                   <div className="modal-header">
                     <h5 className="modal-title" id="productsModalLabel">Nuestra colección de ropa</h5>
@@ -70,10 +68,7 @@ const MainPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-
-
+          </div>
         </>
     );
 };

@@ -9,9 +9,9 @@ const Contact: React.FC<AnimateProps> = ({animate}) => {
         initial={{ opacity: 0}}
         animate= { animate ? { opacity: 1 } : { opacity: 0}}
         id="contact"
-        className="container py-4 py-lg-3"
+        className="container py-4 py-lg-1"
         >
-            <div className="mb-5">
+            <div className="mb-5 mt-2 mt-md-0">
                 <div className="row d-flex justify-content-center">
                     <div className="col-12 col-lg-9 text-center">
                         <h1>Contáctanos</h1>

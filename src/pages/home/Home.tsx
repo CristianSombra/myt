@@ -11,7 +11,7 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
         initial={{ opacity: 0}}
         animate= { animate ? { opacity: 1 } : { opacity: 0}}
         id="home"
-        className="container home-container"
+        className="container-fluid home-container"
         >
             <div className="row d-flex justify-content-center mt-2 my-md-5">
                 <div className="col-12 col-md-6">
@@ -30,7 +30,7 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-10 col-md-4 col-lg-4 mb-1">
+                <div className="col-10 col-md-4 col-lg-4 col-xl-3 mb-1">
                     <img src={imageHome} className="img-fluid rounded-4 shadow" alt="..."></img>
                 </div>
                 <div className="d-flex justify-content-center my-4 d-block d-md-none">

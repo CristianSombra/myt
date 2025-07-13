@@ -34,7 +34,7 @@ const About: React.FC<AnimateProps> = ({animate}) => {
         className="about-container my-5"
         >
            <div className="row d-flex justify-content-center">
-                <div className="col-12 text-center mt-4">
+                <div className="col-12 text-center mt-4 mt-md-0">
                     <h1>Sobre Nosotros</h1>
                 </div>
                  <div className="col-11 col-md-9 col-lg-7 text-center my-4">

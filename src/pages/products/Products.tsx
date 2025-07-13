@@ -9,10 +9,10 @@ const Producs: React.FC<AnimateProps> = ({animate}) => {
         initial={{ opacity: 0}}
         animate= { animate ? { opacity: 1 } : { opacity: 0}}
         id="products"
-        className="container products-container my-5"
+        className="container products-container mb-5"
         >
             <div className="row d-flex justify-content-center">
-                <div className="col-12 text-center mt-4">
+                <div className="col-12 text-center mt-4 mt-md-0">
                     <h1>Nuestros Productos</h1>
                 </div>
                  <div className="col-12 col-md-11 col-lg-9 text-center my-4">
@@ -26,7 +26,7 @@ const Producs: React.FC<AnimateProps> = ({animate}) => {
                     <p>Comodidad y estilo para cualquier ocasión.</p>
                     <button
                       type="button"
-                      className="btn btn-primary mt-3"
+                      className="btn btn-dark mt-3"
                       data-bs-toggle="modal"
                       data-bs-target="#productsModal"
                     >
