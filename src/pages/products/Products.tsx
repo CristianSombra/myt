@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import type {AnimateProps} from "../../components";
 import { imageProducts1, imageProducts2, imageProducts3, imageProducts4 } from "../../assets/images/Images";
 
-const Services: React.FC<AnimateProps> = ({animate}) => {
+const Producs: React.FC<AnimateProps> = ({animate}) => {
     return(
         <motion.section
         initial={{ opacity: 0}}
@@ -24,6 +24,14 @@ const Services: React.FC<AnimateProps> = ({animate}) => {
                     <img src={imageProducts1} className="img-fluid rounded-4 shadow" alt="..."></img>
                     <h4 className="my-3">Deportivo</h4>
                     <p>Comodidad y estilo para cualquier ocasión.</p>
+                    <button
+                      type="button"
+                      className="btn btn-primary mt-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productsModal"
+                    >
+                      Ver colección
+                    </button>
                 </div>
                 <div className="col-10 col-md-5 col-lg-3 text-center">
                     <img src={imageProducts2} className="img-fluid rounded-4 shadow" alt="..."></img>
@@ -45,4 +53,4 @@ const Services: React.FC<AnimateProps> = ({animate}) => {
     )
 }
 
-export default Services;
+export default Producs;
