@@ -17,12 +17,12 @@ export const firstSectionImages = [
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_2_fg4363.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752615288/ChatGPT_Image_15_jul_2025_05_05_38_p.m._fizpay.webp",
     title: "Prenda 2",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/adolescente_mujer_grande_1_qkgc3h.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752615288/ChatGPT_Image_15_jul_2025_05_32_56_p.m._wjtesc.webp",
     title: "Prenda 3",
     description: "Descripción breve de la prenda."
   },
@@ -32,8 +32,13 @@ export const firstSectionImages = [
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/adolescente_mujer_grande_1_qkgc3h.webp",
     title: "Prenda 5",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328830/joven_1_x02ryg.webp",
+    title: "Prenda 6",
     description: "Descripción breve de la prenda."
   }
 ];
@@ -45,12 +50,12 @@ export const secondSectionImages = [
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_2_fg4363.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328837/hombre_2_pck5i8.webp",
     title: "Prenda 2",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/adolescente_mujer_grande_1_qkgc3h.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328839/mujer_3_o7opnc.webp",
     title: "Prenda 3",
     description: "Descripción breve de la prenda."
   },
