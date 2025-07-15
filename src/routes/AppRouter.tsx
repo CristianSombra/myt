@@ -50,25 +50,25 @@ const MainPage: React.FC = () => {
               aria-labelledby="productsModalLabel"
               aria-hidden="true"
             >
-            <div className="modal-dialog modal-lg modal-dialog-centered">
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="productsModalLabel">Nuestra colección de ropa</h5>
-                    <button
-                      type="button"
-                      className="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
+              <div className="modal-dialog modal-lg modal-dialog-centered">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h5 className="modal-title" id="productsModalLabel">Nuestra colección de ropa</h5>
+                      <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div className="modal-body">
+                      <Suspense fallback={<SpinnerLoader />}>
+                        <FirstSectionProducts />
+                      </Suspense>
+                    </div>
                   </div>
-                  <div className="modal-body">
-                    <Suspense fallback={<SpinnerLoader />}>
-                      <FirstSectionProducts />
-                    </Suspense>
-                  </div>
-                </div>
               </div>
-          </div>
+            </div>
         </>
     );
 };
