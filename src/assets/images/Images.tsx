@@ -38,6 +38,90 @@ export const firstSectionImages = [
   }
 ];
 
+export const secondSectionImages = [
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328836/hombre_1_qiq0so.webp",
+    title: "Prenda 1",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_2_fg4363.webp",
+    title: "Prenda 2",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/adolescente_mujer_grande_1_qkgc3h.webp",
+    title: "Prenda 3",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_4_y24mbl.webp",
+    title: "Prenda 4",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    title: "Prenda 5",
+    description: "Descripción breve de la prenda."
+  }
+];
+
+export const thirdSectionImages = [
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    title: "Prenda 1",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_2_fg4363.webp",
+    title: "Prenda 2",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/adolescente_mujer_grande_1_qkgc3h.webp",
+    title: "Prenda 3",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_4_y24mbl.webp",
+    title: "Prenda 4",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    title: "Prenda 5",
+    description: "Descripción breve de la prenda."
+  }
+];
+
+export const fourthSectionImages = [
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    title: "Prenda 1",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_2_fg4363.webp",
+    title: "Prenda 2",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/adolescente_mujer_grande_1_qkgc3h.webp",
+    title: "Prenda 3",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_4_y24mbl.webp",
+    title: "Prenda 4",
+    description: "Descripción breve de la prenda."
+  },
+  {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    title: "Prenda 5",
+    description: "Descripción breve de la prenda."
+  }
+];
+
 
 //About
 export const imageAbout1 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752329007/about1_njcqj0_fnvvmt.webp";

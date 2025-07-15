@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { firstSectionImages } from "../../assets/images/Images";
-import "../../styles";
 
-type ProductImage = {
+export interface ProductImage {
   src: string;
   title: string;
   description: string;
-};
+}
+
+interface SectionProductsProps {
+  images: ProductImage[];
+  carouselId: string; // ID único para cada carrusel
+}
 
 const chunkArray = (arr: ProductImage[], size: number): ProductImage[][] => {
   return Array.from({ length: Math.ceil(arr.length / size) }, (_, index) =>
@@ -15,28 +18,31 @@ const chunkArray = (arr: ProductImage[], size: number): ProductImage[][] => {
 };
 
 const getChunkSize = (width: number): number => {
-  if (width >= 992) return 3; // lg and up
-  if (width >= 768) return 2; // md and up
-  return 1; // sm and down
+  if (width >= 992) return 3; // Desktop
+  if (width >= 768) return 2; // Tablet
+  return 1;                  // Mobile
 };
 
-const FirstSectionProducts: React.FC = () => {
+const SectionProducts: React.FC<SectionProductsProps> = ({ images, carouselId }) => {
   const [chunkSize, setChunkSize] = useState(getChunkSize(window.innerWidth));
 
   useEffect(() => {
     const handleResize = () => {
       setChunkSize(getChunkSize(window.innerWidth));
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const chunks = chunkArray(firstSectionImages, chunkSize);
+  const chunks = chunkArray(images, chunkSize);
 
   return (
     <div className="container py-5">
-      <div id="productsCarousel" className="carousel slide" data-bs-ride="carousel">
+      <div
+        id={carouselId}
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div className="carousel-inner">
           {chunks.map((group, groupIndex) => (
             <div
@@ -73,11 +79,11 @@ const FirstSectionProducts: React.FC = () => {
           ))}
         </div>
 
-        {/* Controles */}
+        {/* Controles personalizados */}
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target="#productsCarousel"
+          data-bs-target={`#${carouselId}`}
           data-bs-slide="prev"
         >
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -86,7 +92,7 @@ const FirstSectionProducts: React.FC = () => {
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#productsCarousel"
+          data-bs-target={`#${carouselId}`}
           data-bs-slide="next"
         >
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
@@ -97,4 +103,4 @@ const FirstSectionProducts: React.FC = () => {
   );
 };
 
-export default FirstSectionProducts;
+export default SectionProducts;
