@@ -26,7 +26,7 @@ const Producs: React.FC<AnimateProps> = ({animate}) => {
                     <p>Comodidad y estilo para cualquier ocasión.</p>
                     <button
                       type="button"
-                      className="btn btn-dark mt-3"
+                      className="btn btn-dark mb-5 mb-md-5"
                       data-bs-toggle="modal"
                       data-bs-target="#productsModal"
                     >

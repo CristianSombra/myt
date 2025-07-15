@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { firstSectionImages } from "../../assets/images/Images";
 import "../../styles";
 
@@ -8,20 +8,34 @@ type ProductImage = {
   description: string;
 };
 
-
 const chunkArray = (arr: ProductImage[], size: number): ProductImage[][] => {
   return Array.from({ length: Math.ceil(arr.length / size) }, (_, index) =>
     arr.slice(index * size, index * size + size)
   );
 };
 
+const getChunkSize = (width: number): number => {
+  if (width >= 992) return 3; // lg and up
+  if (width >= 768) return 2; // md and up
+  return 1; // sm and down
+};
+
 const FirstSectionProducts: React.FC = () => {
-  // Dividir las imágenes en chunks de 3 (desktop), 2 (tablet), o 1 (mobile)
-  const chunks = chunkArray(firstSectionImages, 3);
+  const [chunkSize, setChunkSize] = useState(getChunkSize(window.innerWidth));
+
+  useEffect(() => {
+    const handleResize = () => {
+      setChunkSize(getChunkSize(window.innerWidth));
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const chunks = chunkArray(firstSectionImages, chunkSize);
 
   return (
     <div className="container py-5">
-
       <div id="productsCarousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           {chunks.map((group, groupIndex) => (
@@ -31,7 +45,16 @@ const FirstSectionProducts: React.FC = () => {
             >
               <div className="row">
                 {group.map((item, itemIndex) => (
-                  <div className="col-12 col-md-6 col-lg-4" key={itemIndex}>
+                  <div
+                    className={`col-12 ${
+                      chunkSize === 3
+                        ? "col-lg-4"
+                        : chunkSize === 2
+                        ? "col-md-6"
+                        : "col-12"
+                    }`}
+                    key={itemIndex}
+                  >
                     <div className="card">
                       <img
                         src={item.src}
