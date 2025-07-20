@@ -1,6 +1,7 @@
 import React from "react";
 import { SectionProducts } from "../../sections";
 import type { ProductImage } from "../../sections";
+import "../../styles";
 
 
 interface CategoryModalProps {
@@ -21,7 +22,7 @@ const CategoryModal: React.FC<CategoryModalProps> = ({ categoryName, images }) =
       aria-labelledby={`${modalId}Label`}
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-lg modal-dialog-centered">
+      <div className="modal-dialog modal-xl modal-dialog-centered modal-md-xl">
         <div className="modal-content">
           <div className="modal-header">
             <span className="fw-bold">
