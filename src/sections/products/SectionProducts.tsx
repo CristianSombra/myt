@@ -37,7 +37,7 @@ const SectionProducts: React.FC<SectionProductsProps> = ({ images, carouselId })
   const chunks = chunkArray(images, chunkSize);
 
   return (
-    <div className="container py-5">
+    <div className="container py-3">
       <div
         id={carouselId}
         className="carousel slide"
@@ -67,7 +67,7 @@ const SectionProducts: React.FC<SectionProductsProps> = ({ images, carouselId })
                         className="card-img-top"
                         alt={item.title}
                       />
-                      <div className="card-body">
+                      <div className="card-body text-center">
                         <h5 className="card-title">{item.title}</h5>
                         <p className="card-text">{item.description}</p>
                       </div>
