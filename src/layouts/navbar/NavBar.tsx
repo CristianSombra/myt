@@ -90,6 +90,15 @@ const Navbar: React.FC = () => {
           >
             <FaWhatsapp size={45} />
           </a>
+          <a
+            href="https://wa.me/5492964694981"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link text-success d-md-none d-block ms-4"
+            style={{ textDecoration: 'none' }}
+          >
+            <p className='fs-4'>WhatsApp Corporativo</p>
+          </a>
         </motion.div>
       </div>
     </nav>
