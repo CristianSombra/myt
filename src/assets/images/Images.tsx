@@ -7,7 +7,7 @@ export const imageHome ="https://res.cloudinary.com/dk7b7yi87/image/upload/v1752
 //Products
 export const imageProducts1 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/Buzo_ejemplo_cyjbe2.webp";
 export const imageProducts2 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328838/mujer_1_aww6pf.webp";
-export const imageProducts3 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328842/estampado_para_ejemplo_sveqcm.webp";
+export const imageProducts3 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1753023253/ChatGPT_Image_19_jul_2025_02_10_35_p.m._x9ql7z.webp";
 export const imageProducts4 = "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328831/mujer_2_qjkdi3.webp";
 
 export const firstSectionImages = [
@@ -60,12 +60,17 @@ export const secondSectionImages = [
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_4_y24mbl.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1753023484/ChatGPT_Image_19_jul_2025_11_12_53_a.m._uz6kta.webp",
     title: "Prenda 4",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1753023485/ChatGPT_Image_20_jul_2025_11_51_30_a.m._crwdqn.webp",
+    title: "Prenda 5",
+    description: "Descripción breve de la prenda."
+  },
+    {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1753023487/remera_blanca_masculino_csiudv.webp",
     title: "Prenda 5",
     description: "Descripción breve de la prenda."
   }
@@ -73,27 +78,32 @@ export const secondSectionImages = [
 
 export const thirdSectionImages = [
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328841/adolescente_capibara_2_ltgvtc.webp",
     title: "Prenda 1",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_2_fg4363.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328844/mujer_capibara_2_d5er1g.webp",
     title: "Prenda 2",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/adolescente_mujer_grande_1_qkgc3h.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328842/hombre_capibara_1_egqpdr.webp",
     title: "Prenda 3",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_4_y24mbl.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328842/estampado_para_ejemplo_sveqcm.webp",
     title: "Prenda 4",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328840/adolescente_capibara_1_bxqap1.webp",
+    title: "Prenda 5",
+    description: "Descripción breve de la prenda."
+  },
+    {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328843/mujer_capibara_1_hjuxrh.webp",
     title: "Prenda 5",
     description: "Descripción breve de la prenda."
   }
@@ -101,27 +111,32 @@ export const thirdSectionImages = [
 
 export const fourthSectionImages = [
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328830/mujer_1_hichcq.webp",
     title: "Prenda 1",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_2_fg4363.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328833/Mujer_8_c0y9yt.webp",
     title: "Prenda 2",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328829/adolescente_mujer_grande_1_qkgc3h.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328831/mujer_3_t2uszh.webp",
     title: "Prenda 3",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328828/adolescente_joven_4_y24mbl.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328836/Pijama_rosa_2_vmpble.webp",
     title: "Prenda 4",
     description: "Descripción breve de la prenda."
   },
   {
-    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328827/adolescente_joven_1_xoa4bg.webp",
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328835/Pijama_rosa_1_l88wbu.webp",
+    title: "Prenda 5",
+    description: "Descripción breve de la prenda."
+  },
+    {
+    src: "https://res.cloudinary.com/dk7b7yi87/image/upload/v1752328834/pijama_oscuro_1_wfk1xr.webp",
     title: "Prenda 5",
     description: "Descripción breve de la prenda."
   }
