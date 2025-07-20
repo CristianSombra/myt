@@ -63,7 +63,7 @@ const Products: React.FC<{ animate: boolean }> = ({ animate }) => {
                   className="img-fluid rounded-4 shadow"
                   alt={category.name}
                 />
-                <h4 className="my-3">{category.name}</h4>
+                <h4 className="mt-3 mb-2">{category.name}</h4>
                 <p>{category.description}</p>
                 <button
                   type="button"
