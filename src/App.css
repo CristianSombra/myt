@@ -28,3 +28,18 @@ h1, h2, h3 {
   color: #000000;
   margin-bottom: 0.5rem;
 }
+
+@media (min-width: 992px) {
+  .hover-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hover-btn:active {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+  }
+}

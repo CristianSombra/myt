@@ -74,7 +74,7 @@ const Contact: React.FC<AnimateProps> = ({animate}) => {
                           <div className="text-end">
                             <button
                               type="submit"
-                              className="btn btn-outline-dark px-4 rounded-pill"
+                              className="btn btn-dark border-dark hover-btn"
                             >
                               Enviar
                             </button>

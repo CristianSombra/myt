@@ -67,7 +67,7 @@ const Products: React.FC<{ animate: boolean }> = ({ animate }) => {
                 <p>{category.description}</p>
                 <button
                   type="button"
-                  className="btn btn-dark mb-5 mb-md-5"
+                  className="btn btn-dark border-dark hover-btn mb-5 mb-md-5"
                   data-bs-toggle="modal"
                   data-bs-target={`#${modalId}`}
                 >
