@@ -26,7 +26,7 @@ const CategoryModal: React.FC<CategoryModalProps> = ({ categoryName, images }) =
         <div className="modal-content">
           <div className="modal-header">
             <span className="fw-bold">
-              Nuestra colección de {categoryName}
+              Colección de {categoryName}
             </span>
             <button
               type="button"

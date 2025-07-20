@@ -7,13 +7,13 @@ import CategoryModal from "../../components/modal/CategoryModal";
 
 const categories = [
   {
-    name: "Deportivo",
+    name: "Nuestros Buzos",
     image: imageProducts1,
     description: "Comodidad y estilo.",
     collection: firstSectionImages
   },
   {
-    name: "Oversize",
+    name: "Remeras Oversize",
     image: imageProducts2,
     description: "Diseños versátiles.",
     collection: secondSectionImages

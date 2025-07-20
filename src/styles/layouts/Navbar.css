@@ -1,0 +1,41 @@
+.custom-menu-button {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 2.6rem;
+  height: 2.6rem;
+  background: none;
+  gap: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  z-index: 1051; 
+}
+
+.custom-menu-button > div {
+  background: black; 
+  display: block;
+  width: 100%;
+  height: 0.3rem; 
+  border-radius: 0.1rem;
+  transition: all 0.5s ease;
+  transform-origin: left;
+}
+
+.custom-menu-button.open div:first-child {
+  transform: rotate(37deg);
+}
+
+.custom-menu-button.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-menu-button.open div:last-child {
+  transform: rotate(-37deg);
+}
+
+.custom-menu-button.open > div {
+  background-color: black; 
+}
