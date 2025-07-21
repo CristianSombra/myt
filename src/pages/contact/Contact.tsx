@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import type {AnimateProps} from "../../components";
 import { imageContact1 } from "../../assets/images/Images";
+import "../../styles";
 
 const Contact: React.FC<AnimateProps> = ({animate}) => {
     return(
@@ -21,8 +22,8 @@ const Contact: React.FC<AnimateProps> = ({animate}) => {
                     </div>
                 </div>
                 <div className="row d-flex justify-content-around my-3">
-                    <div className="col-12 col-md-6 col-lg-5 order-2 order-md-1 text-center">                    
-                        <form>
+                    <div className="col-12 col-md-7 col-lg-5 order-2 order-md-1 text-center d-flex">                    
+                        <form className="form-equal-height w-100 d-flex flex-column justify-content-between">
                           <div className="mb-3">
                             <label htmlFor="name" className="form-label visually-hidden">
                               Nombre completo
@@ -88,7 +89,6 @@ const Contact: React.FC<AnimateProps> = ({animate}) => {
                 </div>
             </div>
                
-            
         </motion.section>
     )
 }
