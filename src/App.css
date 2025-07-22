@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;800&display=swap');
 
-
 html {
   scroll-behavior: smooth;
 }
-
-
-@media (min-width: 768px) {
-  [id] {
-    scroll-margin-top: 90px; /* Ajusta según la altura de tu navbar */
-  }
-}
-
 
 body {
   font-family: 'Lato', sans-serif;
@@ -20,6 +11,9 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  overflow-x: hidden; /* 🔥 Refuerzo en body */
+  width: 100%;
+  max-width: 100%;
 }
 
 h1, h2, h3 {
@@ -27,6 +21,17 @@ h1, h2, h3 {
   font-weight: 800;
   color: #000000;
   margin-bottom: 0.5rem;
+}
+
+/* Asegura que todos los elementos hijos no causen desbordes */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  [id] {
+    scroll-margin-top: 90px; /* Ajusta según la altura de tu navbar */
+  }
 }
 
 @media (min-width: 992px) {
