@@ -1,10 +1,12 @@
-// src/routes/AppRouter.tsx
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { Navbar, Footer } from "../layouts";
 import { SpinnerLoader } from "../components";
 import { ScrollToTop } from "../utils/scrollToTop/ScrollToTop";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   Home,
   Products,
@@ -54,6 +56,18 @@ const AppRouter: React.FC = () => {
       </Routes>
       <ScrollToTop />
       <Footer />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </>
   );
 };
