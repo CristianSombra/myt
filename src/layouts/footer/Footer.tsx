@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <div className="row d-flex justify-content-center my-3 mt-4 mx-md-auto">
           <div className="col-3 col-md-1 mb-3">
           <a
-            href="https://www.facebook.com/cristiansombra87"
+            href="https://www.facebook.com/mytmodaargentina/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon facebook"
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="col-3 col-md-1">
             <a
-              href="https://www.instagram.com/cristiansombra87/"
+              href="https://www.instagram.com/mytmodaargentina/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon instagram"
