@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import type {AnimateProps} from "../../components";
-import { teamWork } from "../../assets/images/Images";
+import { imageHome } from "../../assets/images/Images";
+import '../../styles';
+
 
 const Home: React.FC<AnimateProps> = ({animate}) => {
     return(
@@ -9,19 +11,32 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
         initial={{ opacity: 0}}
         animate= { animate ? { opacity: 1 } : { opacity: 0}}
         id="home"
+        className="container-fluid home-container"
         >
-            <div className="row my-5">
-                <div className="col-12 text-center">
-                    <h1>Home</h1>
+            <div className="row d-flex justify-content-center mt-2 my-md-5">
+                <div className="col-12 col-md-6">
+                    <div className="row text-center text-md-start">
+                        <div className="col-12">
+                            <h1 className="mb-0">Moda para</h1>
+                            <h1>Adolescentes</h1>
+                        </div>
+                        <div className="col-12 col-md-11 col-lg-10 my-3">
+                            <p>En M&T te ofrecemos las últimas tendencias en ropa para adolescentes. Estilo, comodidad y personalidad en cada prenda. Descubrí nuestra colección y encontrá el outfit que mejor te representa.</p>
+                        </div>
+                        <div className="col-12 d-flex justify-content-md-start d-lg-block d-none">
+                            <a href="#products" className="btn btn-dark border-dark hover-btn">
+                                Ver Productos
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="row d-flex justify-content-center">
-                <div className="col-10 col-md-4 ">
-                    <img src={teamWork} className="img-fluid" alt="..."></img>
+                <div className="col-10 col-md-4 col-lg-4 col-xl-3 mb-1">
+                    <img src={imageHome} className="img-fluid rounded-4 shadow" alt="..."></img>
                 </div>
-                <div className="col-10 col-md-4 text-center">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia repellendus eveniet, quam laudantium amet molestiae possimus minus. Magnam, tempora dolore!
-                    </p>
+                <div className="d-flex justify-content-center my-4 d-block d-md-none">
+                    <a href="#products" className="btn btn-dark border-dark hover-btn">
+                      Ver Productos
+                    </a>
                 </div>
             </div>
         </motion.section>

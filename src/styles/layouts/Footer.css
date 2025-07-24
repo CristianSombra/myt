@@ -1,7 +1,15 @@
-footer a:hover {
-  text-decoration: underline;
+.social-icon {
+  transition: color 0.3s ease;
 }
 
-footer h6, footer h5 {
-  color: #00415D;
+.social-icon.facebook {
+  color: #1877F2; /* Azul Facebook */
+}
+
+.social-icon.instagram {
+  color: #E4405F; /* Rosa Instagram */
+}
+
+.social-icon:hover {
+  filter: brightness(85%); /* Oscurece al hacer hover */
 }

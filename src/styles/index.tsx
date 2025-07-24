@@ -1,3 +1,8 @@
 import './components/spinnerLoader.css';
+import './components/CategoryModal.css';
 import './utils/ScrollToTop.css';
+import './layouts/Navbar.css';
 import './layouts/Footer.css';
+import './pages/home/Home.css';
+import './pages/products/Products.css';
+import './pages/contact/Contact.css';

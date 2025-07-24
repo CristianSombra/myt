@@ -1,52 +1,75 @@
 import React, { Suspense } from "react";
-import { useInView } from 'react-intersection-observer';
-import { Navbar, Footer } from '../layouts';
-// import { ToastContainer } from "react-toastify";
-import { SpinnerLoader } from '../components';
+import { Routes, Route } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
+import { Navbar, Footer } from "../layouts";
+import { SpinnerLoader } from "../components";
 import { ScrollToTop } from "../utils/scrollToTop/ScrollToTop";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
-    Home,
-    About,
-    Products,
-    Contact
+  Home,
+  Products,
+  About,
+  Contact
 } from "../pages";
 
+const MainPage: React.FC = () => {
+  const [homeRef, homeInView] = useInView({ threshold: 0.20 });
+  const [productsRef, productsInView] = useInView({ threshold: 0.20 });
+  const [aboutRef, aboutInView] = useInView({ threshold: 0.10 });
+  const [contactRef, contactInView] = useInView({ threshold: 0.10 });
+
+  return (
+    <>
+      <div ref={homeRef} id="home">
+        <Suspense fallback={<SpinnerLoader />}>
+          <Home animate={homeInView} />
+        </Suspense>
+      </div>
+      <div ref={productsRef} id="products">
+        <Suspense fallback={<SpinnerLoader />}>
+          <Products animate={productsInView} />
+        </Suspense>
+      </div>
+      <div ref={aboutRef} id="about">
+        <Suspense fallback={<SpinnerLoader />}>
+          <About animate={aboutInView} />
+        </Suspense>
+      </div>
+      <div ref={contactRef} id="contact">
+        <Suspense fallback={<SpinnerLoader />}>
+          <Contact animate={contactInView} />
+        </Suspense>
+      </div>
+    </>
+  );
+};
 
 const AppRouter: React.FC = () => {
-    const [homeRef, homeInView] = useInView({ threshold: 0.40 });
-    const [aboutRef, aboutInView] = useInView({ threshold: 0.20 });
-    const [productsRef, productsInView] = useInView({ threshold: 0.20 });
-    const [contactRef, contactInView] = useInView({ threshold: 0.20 });
-
-
-    return (
-        <>
-            <Navbar />
-            <div ref={homeRef}>
-                <Suspense fallback={<SpinnerLoader />}>
-                    <Home animate={homeInView} />
-                </Suspense>
-            </div>
-            <div ref={aboutRef}>
-                <Suspense fallback={<SpinnerLoader />}>
-                    <About animate={aboutInView} />
-                </Suspense>
-            </div>
-            <div ref={productsRef}>
-                <Suspense fallback={<SpinnerLoader />}>
-                    <Products animate={productsInView} />
-                </Suspense>
-            </div>
-            <div ref={contactRef}>
-                <Suspense fallback={<SpinnerLoader />}>
-                    <Contact animate={contactInView} />
-                </Suspense>
-            </div>
-            <ScrollToTop/>
-            <Footer />
-            {/* <ToastContainer /> */}
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/buzos" element={<Products animate={true} />} />
+      </Routes>
+      <ScrollToTop />
+      <Footer />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+    </>
+  );
 };
 
 export default AppRouter;
