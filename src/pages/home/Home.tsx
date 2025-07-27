@@ -17,11 +17,11 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
                 <div className="col-12 col-md-6">
                     <div className="row text-center text-md-start">
                         <div className="col-12">
-                            <h1 className="mb-0">Moda para</h1>
-                            <h1>Adolescentes</h1>
+                            <h1 className="mb-0">Moda</h1>
+                            <h1>Argentina</h1>
                         </div>
                         <div className="col-12 col-md-11 col-lg-10 my-3">
-                            <p>En M&T te ofrecemos las últimas tendencias en ropa para adolescentes. Estilo, comodidad y personalidad en cada prenda. Descubrí nuestra colección y encontrá el outfit que mejor te representa.</p>
+                            <p>En M&T te acercamos las últimas tendencias en moda urbana, con diseños propios que combinan estilo, comodidad y personalidad. Descubrí nuestra colección y encontrá el outfit que mejor va con vos.</p>
                         </div>
                         <div className="col-12 d-flex justify-content-md-start d-lg-block d-none">
                             <a href="#products" className="btn btn-dark border-dark hover-btn">

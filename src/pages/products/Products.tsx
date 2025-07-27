@@ -46,7 +46,7 @@ const Products: React.FC<{ animate: boolean }> = ({ animate }) => {
             <h1>Nuestros Productos</h1>
           </div>
           <div className="col-12 col-md-11 col-lg-9 text-center my-4">
-            <p>En M&T te ofrecemos las últimas tendencias en ropa para adolescentes. Estilo, comodidad y personalidad en cada prenda. Descubrí nuestra colección y encontrá el outfit que mejor te representa.</p>
+            <p>Descubrí en M&T prendas con diseños propios y en tendencia, pensadas para expresarte con estilo, comodidad, personalidad y un toque relajado. Elegí el outfit que mejor va con vos.</p>
           </div>
         </div>
         <div className="row d-flex justify-content-center">
