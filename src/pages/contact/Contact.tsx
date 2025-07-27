@@ -7,7 +7,6 @@ import "../../styles";
 
 const Contact: React.FC<AnimateProps> = ({ animate }) => {
     const handleFormSuccess = () => {
-        // Aquí puedes agregar lógica adicional después de un envío exitoso
         console.log("Mensaje enviado correctamente");
     };
 
@@ -24,7 +23,7 @@ const Contact: React.FC<AnimateProps> = ({ animate }) => {
                         <h1>Contáctanos</h1>
                         <div className="my-4">
                             <p>
-                                Estamos aquí para escucharte. Completa el formulario o escríbenos directamente y nos pondremos en contacto contigo lo antes posible.
+                                Estamos acá para escucharte. Completá el formulario o escribinos por WhatsApp desde la web y te respondemos a la brevedad.
                             </p>
                         </div>
                     </div>

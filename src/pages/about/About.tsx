@@ -11,7 +11,7 @@ const features = [
     icon: <ShoppingBag size={40} color="#CDA274" className="mb-3" />,
     title: "Estilo para Cada Momento",
     description:
-      "Outfits versátiles para la escuela, la uni o salir con amigos. Siempre a la moda, siempre vos."
+      "Outfits versátiles para cada momento: días tranquilos, finde en movimiento o planes inesperados."
   },
   {
     icon: <Sparkles size={40} color="#CDA274" className="mb-3" />,
@@ -21,9 +21,9 @@ const features = [
   },
   {
     icon: <GlobeLock size={40} color="#CDA274" className="mb-3" />,
-    title: "Comunicación 100% Segura",
+    title: "Comunicación segura",
     description:
-      "Hablá con nosotros solo por nuestras redes oficiales o WhatsApp corporativo. Pagá tu prenda al recibirla, sin adelantos ni sorpresas."
+      "Hablá con nosotros sólo por nuestras redes oficiales o WhatsApp corporativo."
   }
 ];
 
@@ -41,9 +41,7 @@ const About: React.FC<AnimateProps> = ({ animate }) => {
         </div>
         <div className="col-11 col-md-9 col-lg-7 text-center my-4">
           <p>
-            En M&T te ofrecemos las últimas tendencias en ropa para adolescentes.
-            Estilo, comodidad y personalidad en cada prenda. Descubrí nuestra colección y
-            encontrá el outfit que mejor te representa.
+            En M&T creamos moda con identidad propia: diseños originales, en tendencia y pensados para quienes buscan estilo, comodidad, personalidad y un aire relajado. Nos inspira acompañarte con prendas que se adapten a vos.
           </p>
         </div>
       </div>
