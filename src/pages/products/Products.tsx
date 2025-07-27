@@ -43,7 +43,7 @@ const Products: React.FC<{ animate: boolean }> = ({ animate }) => {
       >
         <div className="row d-flex justify-content-center">
           <div className="col-12 text-center mt-4 mt-md-0">
-            <h1>Nuestros Productos</h1>
+              <h1>Nuestros Productos</h1>
           </div>
           <div className="col-12 col-md-11 col-lg-9 text-center my-4">
             <p>Descubrí en M&T prendas con diseños propios y en tendencia, pensadas para expresarte con estilo, comodidad, personalidad y un toque relajado. Elegí el outfit que mejor va con vos.</p>
