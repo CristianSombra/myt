@@ -1,9 +1,9 @@
-// src/pages/products/Products.tsx
 import React from "react";
 import { motion } from "framer-motion";
 import { imageProducts1, imageProducts2, imageProducts3, imageProducts4 } from "../../assets/images/Images";
 import { firstSectionImages, secondSectionImages, thirdSectionImages, fourthSectionImages } from "../../assets/images/Images";
 import CategoryModal from "../../components/modal/CategoryModal";
+import "../../styles";
 
 const categories = [
   {
@@ -43,7 +43,7 @@ const Products: React.FC<{ animate: boolean }> = ({ animate }) => {
       >
         <div className="row d-flex justify-content-center">
           <div className="col-12 text-center mt-4 mt-md-0">
-            <h1>Nuestros Productos</h1>
+              <h1>Nuestros Productos</h1>
           </div>
           <div className="col-12 col-md-11 col-lg-9 text-center my-4">
             <p>Descubrí en M&T prendas con diseños propios y en tendencia, pensadas para expresarte con estilo, comodidad, personalidad y un toque relajado. Elegí el outfit que mejor va con vos.</p>
@@ -55,7 +55,7 @@ const Products: React.FC<{ animate: boolean }> = ({ animate }) => {
             const modalId = `productsModal${formattedName}`;
             return (
               <div
-                className="col-10 col-md-5 col-lg-3 text-center"
+                className="col-10 col-md-5 col-lg-3 text-center category-card"
                 key={index}
               >
                 <img
