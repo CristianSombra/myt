@@ -39,7 +39,7 @@ const Home: React.FC<AnimateProps> = ({animate}) => {
                             animate={{ opacity: 1, filter: "blur(0px)" }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             >
-                                <a href="#products" className="btn btn-dark border-dark hover-btn">
+                                <a href="#products" className="btn btn-dark border-dark my-button hover-btn">
                                     Ver Productos
                                 </a>
                         </motion.div>
